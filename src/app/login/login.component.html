@@ -1,0 +1,23 @@
+<div class="wrapper d-flex justify-content-center">
+   <div class="w-50 p-5 m-5">
+    <form [formGroup]="Login" (ngSubmit)="LogIn()">
+        <div class="mb-3">
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" class="form-control" formControlName="username">
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-group">
+                <input type="Submit" class="form-control btn btn-primary">
+            </div>
+        </div>
+    </form>
+   </div>
+</div>
